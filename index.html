@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false;" onkeypress="return false;" onkeydown="return false;" onkeyup="return false;">
+	<head>
+		<title>HTR-TECH</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, user-scalable=0">
+		<meta name="author" content="Tahmid Rayat" />
+		<meta name="description" content="Github Portfolio of Tahmid Rayat (HTR-TECH)" />
+		<meta name="keywords" content="HTR-TECH, Tahmid Rayat, Hasan Tahmid Rayat, tahmid.rayat, htrtech, tahmidrayat" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:title" content="HTR-TECH (TAHMID RAYAT)" />
+		<meta property="og:site_name" content="HTR-TECH | Github Portfolio" />
+		<meta property="og:url" content="https://htr-tech.github.io/" />
+		<meta property="og:description" content="Github Portfolio of Tahmid Rayat" />
+		<meta property="og:image" content="https://avatars.githubusercontent.com/u/56682134" />
+		<meta property="og:image:type" content="image/png" />
+		<meta itemprop="name" content="HTR-TECH" />
+		<meta itemprop="image" content="https://avatars.githubusercontent.com/u/56682134" />
+		<meta itemprop="description" content="Github Portfolio of Tahmid Rayat" />
+		<link rel="shortcut icon" href="assets/logo.svg" />
+		<link rel="stylesheet" href="assets/style.css" />
+		<script src="assets/awesome.js"></script>
+	</head>
+	<body>
+		<div class="bg"></div>
+		<div class="neil">
+			<img src="assets/logo.svg" width="200" />
+		</div>
+		<p class="typewriter">
+			<br><br>
+			Howdy 👋</br><br>its TAHMID RAYAT</br></br>I'm <!-- https://codepen.io/hckkiu/pen/xxYbYQb -->
+			<span data-text="A Student , From Bangladesh , A Muslim , A part time Programmer"></span>
+		</p>
+		<div class="gg">
+			<ul>
+				<a href="https://facebook.com/tahmid.rayat.official">
+					<li><i class="fab fa-facebook-f"></i></li>
+				</a>
+				<a href="https://instagram.com/tahmid.rayat">
+					<li><i class="fab fa-instagram"></i></li>
+				</a>
+				<a href="https://t.me/tahmidrayat_official">
+					<li><i class="fab fa-telegram"></i></li>
+				</a>
+			</ul>
+		</div>
+		<script>
+			var span=document.querySelector(".typewriter span"),textArr=span.getAttribute("data-text").split(", "),maxTextIndex=textArr.length,sPerChar=.15,sBetweenWord=1.5,textIndex=0;function typing(e,t){var n=0,r=t.length-1,a=setInterval(function(){span.innerHTML+=t[n],n==r?(clearInterval(a),setTimeout(function(){deleting(e,t)},1500*sBetweenWord)):n+=1},1500*sPerChar)}function deleting(e,t){var n=t.length-1,r=setInterval(function(){span.innerHTML=t.substr(0,n),0==n?(clearInterval(r),e+1==maxTextIndex?e=0:e+=1,setTimeout(function(){typing(e,textArr[e])},1500*sBetweenWord)):n-=1},1500*sPerChar)}typing(textIndex,textArr[textIndex]);
+		</script>
+	</body>
+</html>
