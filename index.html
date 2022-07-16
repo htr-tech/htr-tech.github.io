@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html oncontextmenu="return false;" onkeypress="return false;" onkeydown="return false;" onkeyup="return false;">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 	<meta name="author" content="Tahmid Rayat" />
 	<meta name="description" content="Github Portfolio of Tahmid Rayat (HTR-TECH)" />
 	<meta name="keywords" content="HTR-TECH, Tahmid Rayat, Hasan Tahmid Rayat, htrtech, tahmid.rayat, tahmidrayat" />
@@ -16,10 +17,10 @@
 	<meta itemprop="name" content="HTR-TECH" />
 	<meta itemprop="image" content="https://tahmidrayat.is-a.dev/assets/logo.svg" />
 	<meta itemprop="description" content="Github Portfolio of Tahmid Rayat" />
-    <title>HTR-TECH | Github Portfolio</title>
+	<title>HTR-TECH | Github Portfolio</title>
 	<link rel="shortcut icon" href="assets/logo.svg" />
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/font-awesome.min.css">
 </head>
 
 <body>
@@ -27,18 +28,25 @@
 		<img src="assets/logo.svg" />
 		<h1>Tahmid Rayat</h1>
 		<p>&#8205;<span text="Student , Programmer , Bangladeshi , Muslim "></span></p>
-		<script> <!-- https://codepen.io/hckkiu/pen/xxYbYQb -->
-			var span=document.querySelector("p span"),textArr=span.getAttribute("text").split(", "),maxTextIndex=textArr.length,sPerChar=.15,sBetweenWord=1.5,textIndex=0;function typing(e,t){var n=0,r=t.length-1,a=setInterval(function(){span.innerHTML+=t[n],n==r?(clearInterval(a),setTimeout(function(){deleting(e,t)},1000*sBetweenWord)):n+=1},1000*sPerChar)}function deleting(e,t){var n=t.length-1,r=setInterval(function(){span.innerHTML=t.substr(0,n),0==n?(clearInterval(r),e+1==maxTextIndex?e=0:e+=1,setTimeout(function(){typing(e,textArr[e])},1000*sBetweenWord)):n-=1},1000*sPerChar)}typing(textIndex,textArr[textIndex]);
+		< !--https://codepen.io/hckkiu/pen/xxYbYQb -->
+		<script> 
+			var span = document.querySelector("p span"), textArr = span.getAttribute("text").split(", "), maxTextIndex = textArr.length, sPerChar = .15, sBetweenWord = 1.5, textIndex = 0; function typing(e, t) { var n = 0, r = t.length - 1, a = setInterval(function () { span.innerHTML += t[n], n == r ? (clearInterval(a), setTimeout(function () { deleting(e, t) }, 1000 * sBetweenWord)) : n += 1 }, 1000 * sPerChar) } function deleting(e, t) { var n = t.length - 1, r = setInterval(function () { span.innerHTML = t.substr(0, n), 0 == n ? (clearInterval(r), e + 1 == maxTextIndex ? e = 0 : e += 1, setTimeout(function () { typing(e, textArr[e]) }, 1000 * sBetweenWord)) : n -= 1 }, 1000 * sPerChar) } typing(textIndex, textArr[textIndex]);
 		</script>
 	</div>
-    <div id="links">
-        <a class="link" href="https://t.me/tahmidrayat_official" target="_blank"><i class="fa fa-telegram"></i> Telegram</a>
-        <a class="link" href="https://github.com/htr-tech" target="_blank"><i class="fa fa-github"></i> Github</a>
-        <a class="link" href="https://facebook.com/tahmid.rayat.official" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
-        <a class="link" href="https://instagram.com/tahmid.rayat" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
-        <a class="link" href="https://gitlab.com/htr-tech" target="_blank"><i class="fa fa-gitlab"></i> Gitlab</a>
-        <a class="link" href="https://www.youtube.com/c/TahmidRayat" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a>
-        <a class="link" href="http://git.io/Reverse" target="_blank"><i class="fa fa-github-alt"></i> Reverse Engineering Repo</a>
-    </div>
+	<div id="socials">
+		<a class="link" href="https://t.me/tahmidrayat_official" target="_blank"><i class="fa fa-telegram"></i>
+			Telegram</a>
+		<a class="link" href="https://github.com/htr-tech" target="_blank"><i class="fa fa-github"></i> Github</a>
+		<a class="link" href="https://facebook.com/tahmid.rayat.official" target="_blank"><i class="fa fa-facebook"></i>
+			Facebook</a>
+		<a class="link" href="https://instagram.com/tahmid.rayat" target="_blank"><i class="fa fa-instagram"></i>
+			Instagram</a>
+		<a class="link" href="https://gitlab.com/htr-tech" target="_blank"><i class="fa fa-gitlab"></i> Gitlab</a>
+		<a class="link" href="https://www.youtube.com/c/TahmidRayat" target="_blank"><i class="fa fa-youtube-play"></i>
+			YouTube</a>
+		<a class="link" href="http://git.io/Reverse" target="_blank"><i class="fa fa-github-alt"></i> Reverse
+			Engineering Repo</a>
+	</div>
 </body>
+
 </html>
