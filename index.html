@@ -28,7 +28,7 @@
 		<img src="assets/logo.svg" />
 		<h1>Tahmid Rayat</h1>
 		<p>&#8205;<span text="Student , Programmer , Bangladeshi , Muslim "></span></p>
-		< !--https://codepen.io/hckkiu/pen/xxYbYQb -->
+		<!-- https://codepen.io/hckkiu/pen/xxYbYQb -->
 		<script> 
 			var span = document.querySelector("p span"), textArr = span.getAttribute("text").split(", "), maxTextIndex = textArr.length, sPerChar = .15, sBetweenWord = 1.5, textIndex = 0; function typing(e, t) { var n = 0, r = t.length - 1, a = setInterval(function () { span.innerHTML += t[n], n == r ? (clearInterval(a), setTimeout(function () { deleting(e, t) }, 1000 * sBetweenWord)) : n += 1 }, 1000 * sPerChar) } function deleting(e, t) { var n = t.length - 1, r = setInterval(function () { span.innerHTML = t.substr(0, n), 0 == n ? (clearInterval(r), e + 1 == maxTextIndex ? e = 0 : e += 1, setTimeout(function () { typing(e, textArr[e]) }, 1000 * sBetweenWord)) : n -= 1 }, 1000 * sPerChar) } typing(textIndex, textArr[textIndex]);
 		</script>
